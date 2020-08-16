@@ -126,3 +126,8 @@
                                                                                                         .contenedor-form .formulario:nth-child(2) {
                                                                                                             display: block;
                                                                                                         }
+                                                                                                        
+                                                                                                        .img-container {
+                                                                                                            text-align: center;
+                                                                                                            padding-left: 10%;
+                                                                                                        }
