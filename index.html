@@ -10,6 +10,7 @@
 
 <body>
 
+
     <div class="img-container">
         <!-- Block parent element -->
         <img class="mb-4" src="../proyectojap2020/img/login.png" alt="ggg" width="976" height="250">
@@ -21,7 +22,7 @@
 
         <div class="toggle">
 
-            <span> Crear Cuenta</span>
+            <span>Crear Cuenta</span>
 
 
         </div>
@@ -34,8 +35,8 @@
                 <label for="inputEmail" class="sr-only">Correo Electronico</label>
 
 
-                <input type="email" name="correo" class="form-control" id="inputEmail" placeholder="Email" required focus>
-
+                <input type="email" name="correo" class="form-control" id="inputEmail" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="Email" title="Escriba un correo valido" required focus>
+                <label> Contraseña</label>
                 <input type="password" name="contra" id="pass" placeholder="Contraseña" required>
                 <input type="submit" id="sub-ines" value="Iniciar Sesión">
             </form>
@@ -47,13 +48,15 @@
 
 
 
-        <div class="formulario" id="register-form">
-            <h2 id="acc"> Crea tu Cuenta
-            </h2>
-            <form action="#">
-                <input type="text" name="user" id="ua" placeholder="Usuario" required>
+        <div class="formulario" id="registro-form">
+            <h2>Crear Cuenta</h2>
 
-                <input type="password" name="pass1" id="pass" placeholder="Contraseña" required>
+
+
+            <form action="#">
+                <input type="text" name="user" id="Usuario1" placeholder="Usuario" required>
+
+                <input type="password" name="pass1" id="contra1" placeholder="Contraseña" required>
 
                 <input type="email" name="ce" id="coe" placeholder="Correo Electronico" required>
 
@@ -72,7 +75,7 @@
     </script>
 
     <script src="js/log.js"></script>
-
+    <script src="js/regis.js"></script>
     </div>
 
 

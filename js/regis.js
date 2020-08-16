@@ -1,36 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
-        const Botn1 = document.getElementById("register-form");
-        const Botnr = document.getElementById("sub-log");
-        //localStorage.setItem('Nombre', document.getElementById("user").value);
+        const Registro_boton = document.getElementById("registro-form"); /*Obtiene el valor del formulario de registro*/
+        const Cuenta_log = document.getElementById("sub-log"); /* Obtiene el valor de boton de registrarse*/
 
 
-        Botnr.addEventListener("click", (e) => {
+
+        Cuenta_log.addEventListener("click", (e) => { /*Función para registar en el local storage y hacer la validación después*/
             e.preventDefault();
 
-            const Usuario_r = Botn1.user.value;
-            const Pass_r = Botn1.pass1.value;
+            var eReg = localStorage.setItem("Registro", 0); /* Esto sirve para activar o desactivar el alert de registro*/
 
-            const correo = Botn1.ce.value;
-            const telso = Botn1.tels.value;
 
-            var user2 = localStorage.setItem('Usuario', document.getElementById("ua").value);
 
-            var pass2 = localStorage.setItem('Pass', document.getElementById("passs").value);
-            var coreo3 = localStorage.setItem('Correo', document.getElementById("coe").value);
-            var tel1 = localStorage.setItem('Telefono', document.getElementById("tl").value);
+            localStorage.setItem('Usuario', document.getElementById("Usuario1").value); /*Guardar en el storage el dato ingresado*/
 
-            const apro = username;
-            const pass = password;
+            localStorage.setItem('Pass', document.getElementById("contra1").value); /*Guardar en el storage el dato ingresado*/
 
-            if (username != '' && password != '') {
-                //alert("Bienvenid@ " + username);
-                alert("Correo:" + localStorage.getItem('Correo'));
-                window.location.href = "homepage.html";
+            localStorage.setItem('Correo', document.getElementById("coe").value); /*Guardar en el storage el dato ingresado*/
 
-            } else {
-                alert("error  usuario o contraseña incorecta");
-                location.reload();
-            }
+            localStorage.setItem('Telefono', document.getElementById("tl").value); /*Guardar en el storage el dato ingresado*/
+
+            localStorage.setItem("Registro", 1); /* Avisa que se registro ya el usuario*/
+            alert("se registro correctamete"); /*Alert de aviso de estado de registro*/
+
+            location.reload(); /*Recarga la página*/
         });
 
 
