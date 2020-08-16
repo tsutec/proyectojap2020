@@ -9,10 +9,6 @@ $('.toggle').click(function() {
 });
 
 
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
         const loginForm = document.getElementById("login-form");
         const loginButton = document.getElementById("sub-ines");
@@ -27,8 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             localStorage.setItem('Correo', document.getElementById("inputEmail").value);
             localStorage.setItem('Pass', document.getElementById("pass").value);
-            localStorage.setItem('Usuario', document.getElementById("ua").value);
-            localStorage.setItem('telefon', document.getElementById("tl").value);
+
 
             const apro = username;
             const pass = password;

@@ -126,21 +126,3 @@
                                                                                                         .contenedor-form .formulario:nth-child(2) {
                                                                                                             display: block;
                                                                                                         }
-                                                                                                        
-                                                                                                        img {
-                                                                                                            vertical-align: center;
-                                                                                                            border-style: none;
-                                                                                                            padding: 40px 0px 0px 80px;
-                                                                                                        }
-                                                                                                        
-                                                                                                        .btn-count {
-                                                                                                            background-color: #4CAF50;
-                                                                                                            /* Green */
-                                                                                                            border: none;
-                                                                                                            color: white;
-                                                                                                            padding: 15px 20px;
-                                                                                                            text-align: center;
-                                                                                                            text-decoration: none;
-                                                                                                            display: inline-block;
-                                                                                                            font-size: 15px;
-                                                                                                        }
