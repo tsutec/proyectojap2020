@@ -11,7 +11,7 @@ $('.toggle').click(function() { /*Animación del formulario*/
 
 
 const LrReg = localStorage.getItem("Registro"); /*Ver el valor de Registro en el localstorage*/
-
+const var_tok = localStorage.getItem("Tok");
 
 
 
@@ -33,13 +33,22 @@ function hacer() { /* Realiza el loging o no según el valor de LocalStorage*/
 }
 hacer();
 
+
 function hacer_Alert() { /*Alert para indicar que debe inicar sesion si quiere continuar*/
-    if (LrReg == 0) {
+    if (LrReg == 0 || LrReg == null) {
+        localStorage.removeItem('Usuario');
+        localStorage.setItem("contador", 2);
+        localStorage.removeItem("Correo");
+        localStorage.removeItem('Pass');
+        localStorage.removeItem('Telefono');
+        localStorage.setItem("Tok", 0);
 
         alert("Debes estar registrado para iniciar sesion, sino tienes una crea la cuenta ahora");
     } else {
-        console.log("ya tiene cuenta");
-        var eReg = localStorage.setItem("Registro", 0) /*Se le da ese valor para después volver a mostrar el  alert de registro*/ ;
+        alert("ya tiene cuenta");
+        /* localStorage.setItem("Toekpass", 0);*/
+        /*Se le da ese valor para después volver a mostrar el  alert de registro*/
+
     }
 
 }
@@ -71,8 +80,6 @@ function hacer_login() { /*Ejecuta proceso de  login y guarda los datos en el Lo
                 const username = loginForm.correo.value; /*Obtiene el valor del campo correo ingresado en el formulario  login-form*/
                 const password = loginForm.contra.value; /*Obtiene el valor del campo contraseña en el formulario login-form*/
 
-                localStorage.setItem('Correo', document.getElementById("inputEmail").value); /*Almancena en el LocalStorage el email ingresado*/
-                localStorage.setItem('Pass', document.getElementById("pass").value); /*Almacena en el LocalStorage la contraseña*/
 
                 var Cor_reg = localStorage.getItem("Correo");
                 var User_reg = localStorage.getItem("Usuario");
@@ -80,27 +87,30 @@ function hacer_login() { /*Ejecuta proceso de  login y guarda los datos en el Lo
 
 
                 if (username == " " && password == " ") { /*Validacion de los datos ingresador para poder ingresar a la homepage*/
-
+                    /*localStorage.setItem("Toekpass", 0);*/
+                    localStorage.set("Tok", 0);
                     retornar();
 
                 }
 
                 if (Cor_reg == " " && Pas_reg == " ") { /*Validacion de los datos ingresador para poder ingresar a la homepage*/
-
+                    /* (localStorage.setItem("Toekpass", 0);*/
+                    localStorage.set("Tok", 0);
                     retornar();
 
 
                 }
-                if (Cor_reg !== "" && Pas_reg !== "") {
+                if (username === Cor_reg && password === Pas_reg) {
 
-                    alert("Autentificación correcta"); /*Muestra una alerta para avisar el estado de la validación*/
-                    alert("Bienvenid@: " + User_reg);
+
+
                     localStorage.setItem("contador", 1); /*Asigna el valor a contador de 1*/
+                    localStorage.setItem("Registro", 0);
                     window.location.href = "homepage.html"; /*Redirecciona a homepage*/
-
+                    /* localStorage.setItem("Toekpass", 0);*/
                 } else {
                     alert("error  correo invalido o contraseña incorecta"); /*Mensaje de error de validación*/
-
+                    localStorage.setItem("Registro", 0);
                     location.reload(); /*Vuelve a recargar la página*/
 
                 }
