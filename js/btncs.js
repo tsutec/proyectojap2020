@@ -1,6 +1,6 @@
 function Crear_boton_y_img() {
 
-    const Img_user1 = document.createElement("img");
+    const Img_user1 = document.createElement("img"); //Crea la imagen del logo
     Img_user1.src = "img/user-log.png";
     Img_user1.classList.add("py-2", "d-none", "d-md-inline-block", "logo");
     document.getElementById("list1").appendChild(Img_user1);
