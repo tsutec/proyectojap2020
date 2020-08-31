@@ -1,11 +1,8 @@
 function Crear_boton_y_img() {
 
-    const Img_user1 = document.createElement("img"); //Crea la imagen del logo
-    Img_user1.src = "img/user-log.png";
-    Img_user1.classList.add("py-2", "d-none", "d-md-inline-block", "logo");
-    document.getElementById("list1").appendChild(Img_user1);
 
-    var a = document.createElement("a"); /*Crear un elemento a  para mostrar el usuario almancenado al cargar el homepgae*/
+
+    var a = document.createElement("a");
     a.classList.add("py-2", "d-none", "d-md-inline-block");
     a.href = "#";
     a.innerHTML = localStorage.getItem('Usuario');
@@ -27,6 +24,6 @@ function Crear_boton_y_img() {
         localStorage.removeItem('Pass');
         localStorage.removeItem('Telefono');
         window.location.href = "index.html";
-        window.location.reload();
+
     });
 }
