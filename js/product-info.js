@@ -1,9 +1,8 @@
-var category = {};
-var category1 = {};
-var Product_arra_rel = [];
-var Product_array = [];
-var coments = {};
-var comentsArray = [];
+var category1 = {}; /*Contiene los productos*/
+var Product_arra_rel = []; /*Contiene los indeces de  productos relacionados*/
+var Product_array = []; /*Contiene la info de porductos*/
+var coments = {}; /*Contiene los comentarios del Json sin los nuevos*/
+
 
 
 function Hacer_estrellas(score, estrellas) { /*Realiza las estrellas buenas y malas*/
@@ -36,7 +35,7 @@ function Hacer_estrellas(score, estrellas) { /*Realiza las estrellas buenas y ma
 
 
 
-function hacer_clic() {
+function hacer_clic() { /*Redirecciona a products-info.html al presionar el boton ver*/
 
     document.getElementById("vt").addEventListener("click", function() {
 
@@ -47,7 +46,7 @@ function hacer_clic() {
 
 }
 
-function Obtener_raltedpro(array) { /*Muestra las imagenes de los productos relacionados*/
+function Obtener_raltedpro(array) { /*Obtiene los indices de los productos apartir del json de products-info*/
     for (i = 0; i < array.length; i++) {
         Product_arra_rel.push(array[i]);
 
@@ -219,7 +218,7 @@ document.addEventListener("DOMContentLoaded", function(e) { /*Carga los comentar
             document.getElementById("new_coments").innerHTML = localStorage.getItem("start_coment");
 
         } else {
-            document.getElementById("new_coments").style.display = "none";
+            document.getElementById("new_coments").style.display = "none"; /*no muestra nada cuando no se ha creado un comentario*/
         }
 
     }
