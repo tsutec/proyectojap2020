@@ -42,6 +42,7 @@ function hacer_Alert() { /*Alert para indicar que debe inicar sesion si quiere c
         localStorage.removeItem('Pass');
         localStorage.removeItem('Telefono');
         localStorage.setItem("Tok", 0);
+        localStorage.clear();
 
         alert("Debes estar registrado para iniciar sesion, sino tienes una crea la cuenta ahora");
     } else {

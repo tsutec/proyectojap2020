@@ -159,7 +159,29 @@
         display: inline-block;
         font-size: 14px;
     }
-.logo{
-
-  width:20px
-}
+    
+    .logo {
+        width: 20px
+    }
+    
+    .img-cont {
+        display: inline-block;
+    }
+    
+    .Related_pro {
+        display: inline-block;
+        background-color: green;
+        position: inline-block;
+    }
+    
+    .btn-ver {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        padding-top: 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline;
+        font-size: 14px;
+    }
