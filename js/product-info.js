@@ -54,28 +54,23 @@ function Obtener_raltedpro(array) { /*Obtiene los indices de los productos apart
 
 }
 
-function showImagesGallery(array) { /*Carga las imagenes del JSON para hacer el carousel */
-    // images data
+function showImagesGallery(array) {
+
     let htmlContentToAppend = "";
-    var status = "";
+
     for (let i = 0; i < array.length; i++) {
         let imageSrc = array[i];
-        if (i == 0) status = 'active'; /*activa o desactiva una foto*/
-        else status = "";
+
         htmlContentToAppend += `
-        <div class="carousel-item   ` + status + ` ">
-    <img src="` + imageSrc + `"+ class="d-block w-100" alt="">
-  </div>
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="` + imageSrc + `" alt="">
+            </div>
+        </div>
         `
 
-        document.getElementById("mostrar_c").innerHTML = htmlContentToAppend; /*contenedor donde se van mostrar las imagenes*/
+        document.getElementById("productImagesGallery").innerHTML = htmlContentToAppend;
     }
-
-
-
-
-
-
 }
 
 

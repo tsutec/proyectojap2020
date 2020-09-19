@@ -15,7 +15,7 @@
                                                                                                         
                                                                                                         .contenedor-form {
                                                                                                             background: /* rgba(0, 0, 0, .7)*/
-                                                                                                            #F24464;
+                                                                                                            #f2446a;
                                                                                                             max-width: 500px;
                                                                                                             width: 100%;
                                                                                                             margin: 48px auto;
@@ -130,4 +130,16 @@
                                                                                                         .img-container {
                                                                                                             text-align: center;
                                                                                                             padding-left: 10%;
+                                                                                                        }
+                                                                                                        
+                                                                                                        .tcoment {
+                                                                                                            text-align: center;
+                                                                                                            padding: 0px 5px 2px 0px;
+                                                                                                        }
+                                                                                                        /*.contenedor-form .ratings :hover {
+                                                                                                            background: orange;
+                                                                                                        }*/
+                                                                                                        
+                                                                                                        .checked {
+                                                                                                            color: orange;
                                                                                                         }

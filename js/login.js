@@ -43,15 +43,7 @@ function redireccionar(status) {
     }
 }
 
-function eliminarElemento(id) {
-    imagen = document.getElementById(id);
-    if (!imagen) {
-        alert("El elemento selecionado no existe");
-    } else {
-        padre = imagen.parentNode;
-        padre.removeChild(imagen);
-    }
-}
+
 
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los

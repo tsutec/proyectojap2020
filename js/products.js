@@ -134,5 +134,5 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
         showCategoriesList();
     });
-
+    Crear_boton_y_img(); //Crea boton cerrar sesion y icono de logueo.
 });
