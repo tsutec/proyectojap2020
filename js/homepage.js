@@ -5,30 +5,21 @@ function hacer2() { /*Obtenido el valor de registro ejecuta la instrucción conv
 
     if (val_storage == 1) {
 
-    
-        const Img_user1 = document.createElement("img");
-        Img_user1.src="img/user-log.png";
-        Img_user1.classList.add("py-2", "d-none", "d-md-inline-block", "logo");
-        document.getElementById("list1").appendChild(Img_user1);
-        
 
-        var a = document.createElement("a"); /*Crear un elemento a  para mostrar el usuario almancenado al cargar el homepgae*/
+
+
+
+        var a = document.createElement("span"); /*Crear un elemento a  para mostrar el usuario almancenado al cargar el homepgae*/
         a.classList.add("py-2", "d-none", "d-md-inline-block");
         a.href = "#";
         a.innerHTML = localStorage.getItem('Usuario');
         a.id = "CorC";
-        document.getElementById("list1").appendChild(a);
-   
-        
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.classList.add("py-2", "d-none", "d-md-inline-block", "logBtn");
-        button.href = "#";
-        button.innerText = 'Cerrar Sesion';
-        button.id = "LoginOut";
-        document.getElementById("list1").appendChild(button);
+        document.getElementById("user_name").appendChild(a);
 
-        document.getElementById("LoginOut").addEventListener("click", function() {
+
+
+
+        document.getElementById("login-out").addEventListener("click", function() {
             localStorage.removeItem('Usuario');
             localStorage.setItem("contador", 2);
             localStorage.removeItem("Correo");

@@ -13,26 +13,114 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/search.css" rel="stylesheet">
+
 </head>
 
 <body>
     <nav class="site-header sticky-top py-1 bg-dark">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <!-- Barra de navegacion -->
+        <div class="container d-flex flex-column flex-md-row justify-content-between" id="list1">
             <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
             <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
             <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
             <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
-            <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+
+            <div class="d-flex justify-content-between ">
+                <input type=search id="search" placeholder="Buscar un producto" />
+                <div id="results" class="d-flex justify-content-end"></div>
+            </div>
+            <div class="dropdown">
+                <!-- Crea el menu desplazable  con las opciones My profile,Carrito y Cerrar sesion.-->
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="user_name">
+                    </span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="my-profile.html">My profile</a>
+                    <a class="dropdown-item" href="cart.html">Carrito</a>
+                    <a class="dropdown-item" id="login-out" href="#">Cerrar Sesion</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
         </div>
     </nav>
     <div class="container p-5">
-        <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-            <h4 class="alert-heading">¡A trabajar! :)</h4>
-            <p>Esta sección corresponde a: Entrega 3 (Fecha de entrega: 13/09/2020) y Entrega 4 (Fecha de entrega: 20/09/2020).</p>
-            <hr>
-            <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+        <!-- contenedor para mostrar la info de los productos-->
+        <h3 id="categoryName"></h3>
+        <hr class="my-3">
+        <dl>
+            <dt>Descripción</dt>
+            <dd>
+                <p id="categoryDescription"></p>
+            </dd>
+
+            <dt>Precio</dt>
+            <dd>
+                <p id="productCount"></p>
+            </dd>
+
+            <dt>Cantidad de vehiculos vendidos</dt>
+            <dd>
+                <p id="productCriteria"></p>
+            </dd>
+            <dt>Categoria</dt>
+            <dd>
+                <p id="pro-cat"></p>
+            </dd>
+            <dt>Imágenes ilustrativas</dt>
+            <!-- Crear con carousel con las imagenes del producto-->
+            <dd>
+                <div id="carouselExampleControls" class="carousel slide col-8" data-ride="carousel">
+                    <div class="carousel-inner" id="mostrar_c">
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </dd>
+
+        </dl>
+
+        <div class="container">
+            <!-- Aqui se muestra las imagenes de los productos realacionados-->
+            <h2 class="text left">Productos relacionados</h2>
+            <div id="relatedProductsInside" class="row d-flex equal"></div>
+            <div id="cont"></div>
         </div>
+
+
+
+
+
+
+        <a type="button" class="btn btn-light btn-lg btn-block" href="products.html">Ver productos</a>
+        <!--vuelve a mostrar la informacion del producto -->
+
+        <div class="coments" id="comentario">
+            <!-- contedor de comentarios del producto-->
+            <div class="estre" id="starts"></div>
+
+
+
+        </div>
+        <div id="new_coments"></div>
+        <!-- contenedor de un nuevo comentario -->
+
     </div>
+    <a type="button" class="btn btn-light btn-lg btn-block" href="newcoments.html">Realizar un comentario</a>
+
     <footer class="text-muted">
         <div class="container">
             <p class="float-right">
@@ -54,6 +142,8 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/product-info.js"></script>
+    <script src="js/car_uslg.js"></script>
+
 </body>
 
 </html>
