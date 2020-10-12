@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.rating-box {
+    background-color: #f2446a;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-box h1 {
+    margin: 0 0 30px;
+    font-size: 40px;
+}
+
+.rating-box .ratings .fa {
+    font-size: 40px;
+    color: #FF9800;
+    float: left;
+    cursor: pointer;
+}
+
+.rating-box input {
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 6px 12px;
+    background-color: #bbb;
+}
+
+.rating-box input[type="text"] {
+    background: /* #FF851B*/
+    #94BF54;
+    color: #FFF;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.rating-box button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.rating-box label,
+h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.rating-box textarea {
+    background: #94BF54;
+    color: white;
+    font-size: 12px;
+}
