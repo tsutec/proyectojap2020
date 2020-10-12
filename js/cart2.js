@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
                     var sum = n1 * n2; /*realiza el subtotal sin envio*/
                     input_cat = n1;
-                    alert(n2);
+
 
                     total += sum; /*Calcula el total en base a la cantidad de prodcutos sin envios*/
 
