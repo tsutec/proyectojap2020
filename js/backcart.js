@@ -3,7 +3,6 @@ var cart_arti = {};
 var price = 0;
 var valorSubtotal = 0;
 var moneda = 0;
-var array_moneda = {};
 var CantProd = 0;
 var mon = 0;
 
@@ -13,10 +12,6 @@ const valorEnvioSt = 0.05;
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
-function filtrar_mon(array) {
-    array_moneda.push(array[i]);
-
-}
 
 
 document.addEventListener("DOMContentLoaded", function(e) {
@@ -41,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 <td> ` + cart_arti[i].currency + cart_arti[i].unitCost + `</td>
                 <td><input class="form-control" style="width:60px;" type="number" id="Count_Art" value="` + cart_arti[i].count + `" min="1"></td>
                 <td><span id="productSubtotal">` + cart_arti[i].currency + cart_arti[i].count * cart_arti[i].unitCost + `</span></td>
-                </tr>
+                 </tr>
     
             `
 
@@ -62,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function(e) {
                 var resultado = countArt * price;
                 var costo_envio = 0;
                 mon = resultado;
-                console.log(resultado);
                 document.getElementById("productSubtotal").innerHTML = moneda + resultado;
                 document.getElementById("proCost").innerHTML = moneda + resultado;
                 document.getElementById("envCost").innerHTML = resultado * valorEnvioP;
