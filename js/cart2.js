@@ -148,7 +148,8 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
             var resultado = mon * valorEnvioP;
 
-            document.getElementById("envCost").innerHTML = "UYU" + resultado;
+            document.getElementById("envCost").innerHTML = "UYU" + Math.round(resultado);
+            var total = mon + resultado;;
             var total = mon + resultado;
             var total1 = total.toFixed(2);
             document.getElementById("totCost").innerHTML = "UYU" + total1;
@@ -158,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
         function() {
             var resultado = (mon * valorEnvioEx); /*Calcula costo envio Express y total*/
 
-            document.getElementById("envCost").innerHTML = "UYU" + resultado;
+            document.getElementById("envCost").innerHTML = "UYU" + Math.round(resultado);
             var total = mon + resultado;
             var total1 = total.toFixed(2);
             document.getElementById("totCost").innerHTML = "UYU" + total1;
@@ -169,7 +170,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
             var resultado = (mon * valorEnvioSt);
 
-            document.getElementById("envCost").innerHTML = "UYU" + resultado;
+            document.getElementById("envCost").innerHTML = "UYU" + Math.round(resultado);
             var total = mon + resultado;
             var total1 = total.toFixed(2);
             document.getElementById("totCost").innerHTML = "UYU" + total1;
