@@ -1,234 +1,154 @@
         .jumbotron,
-    .card-body,
-    .container,
-    .site-header {
-        font-family: 'Raleway', serif !important;
-    }
-    
-    .jumbotron .display-4 {
-        font-weight: bold;
-    }
-    
-    .jumbotron {
-        height: 50vh;
-        padding: 5em inherit;
-        margin-bottom: 0;
-        background-color: #53C0FB;
-        background: url('../img/cover_back.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: black;
-        font-weight: bold;
-    }
-    
-    @media (min-width: 768px) {
+        .card-body,
+        .container,
+        .site-header {
+            font-family: 'Raleway', serif !important;
+        }
+        
+        .jumbotron .display-4 {
+            font-weight: bold;
+        }
+        
         .jumbotron {
-            padding-top: 6rem;
-            padding-bottom: 6rem;
+            height: 50vh;
+            padding: 5em inherit;
+            margin-bottom: 0;
+            background-color: #53C0FB;
+            background: url('../img/cover_back.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: black;
+            font-weight: bold;
         }
-    }
-    
-    .jumbotron p:last-child {
-        margin-bottom: 0;
-    }
-    
-    .jumbotron-heading {
-        font-weight: 300;
-    }
-    
-    .jumbotron .container {
-        max-width: 40rem;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 10px;
-        text-shadow: 1px 1px 2px grey;
-    }
-    
-    .jumbotron .lead {
-        font-size: 38px;
-    }
-    
-    footer {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-    
-    footer p {
-        margin-bottom: .25rem;
-    }
-    
-    .site-header a {
-        color: white;
-        transition: ease-in-out color .15s;
-    }
-    
-    .light-text {
-        color: white;
-    }
-    
-    .site-header .dropdown-menu a {
-        color: black;
-    }
-    
-    .dropzone {
-        border: 2px dashed #0087F7;
-        border-radius: 5px;
-        background: white;
-    }
-    
-    .alert {
-        position: fixed;
-        top: 80px;
-        width: 50%;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    
-    .lds-ring {
-        display: inline-block;
-        position: relative;
-        width: 64px;
-        height: 64px;
-        top: 50%;
-        left: 50%;
-    }
-    
-    .lds-ring div {
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        width: 51px;
-        height: 51px;
-        margin: 6px;
-        border: 6px solid #fff;
-        border-radius: 50%;
-        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-        border-color: #fff transparent transparent transparent;
-    }
-    
-    .lds-ring div:nth-child(1) {
-        animation-delay: -0.45s;
-    }
-    
-    .lds-ring div:nth-child(2) {
-        animation-delay: -0.3s;
-    }
-    
-    .lds-ring div:nth-child(3) {
-        animation-delay: -0.15s;
-    }
-    
-    @keyframes lds-ring {
-        0% {
-            transform: rotate(0deg);
+        
+        @media (min-width: 768px) {
+            .jumbotron {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
         }
-        100% {
-            transform: rotate(360deg);
+        
+        .jumbotron p:last-child {
+            margin-bottom: 0;
         }
-    }
-    
-    #spinner-wrapper {
-        position: fixed;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1021;
-        display: none;
-    }
-    
-    a.custom-card,
-    a.custom-card:hover {
-        color: inherit;
-        text-decoration: inherit;
-    }
-    
-    .checked {
-        color: orange;
-    }
-    
-    .logBtn {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 5px 5px;
-        padding-top: 2px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-    }
-    
-    .logo {
-        width: 20px
-    }
-<<<<<<< HEAD
-=======
-    
-    <<<<<<< HEAD
->>>>>>> 47cb1164c268d8ff550803fba484b7ef11bfb8db
-    /* Dropdown Button */
-    
-    .dropbtn {
-        background-color: #3498DB;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-    }
-    /* Dropdown button on hover & focus */
-    
-    .dropbtn:hover,
-    .dropbtn:focus {
-        background-color: #2980B9;
-    }
-    /* The container <div> - needed to position the dropdown content */
-    
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    /* Dropdown Content (Hidden by Default) */
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-    /* Links inside the dropdown */
-    
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    /* Change color of dropdown links on hover */
-    
-    .dropdown-content a:hover {
-        background-color: #ddd
-    }
-    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-    
-    .show {
-        display: block;
-<<<<<<< HEAD
-    }
-=======
-        =======.img-cont {
+        
+        .jumbotron-heading {
+            font-weight: 300;
+        }
+        
+        .jumbotron .container {
+            max-width: 40rem;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            text-shadow: 1px 1px 2px grey;
+        }
+        
+        .jumbotron .lead {
+            font-size: 38px;
+        }
+        
+        footer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: .25rem;
+        }
+        
+        .site-header a {
+            color: white;
+            transition: ease-in-out color .15s;
+        }
+        
+        .light-text {
+            color: white;
+        }
+        
+        .site-header .dropdown-menu a {
+            color: black;
+        }
+        
+        .dropzone {
+            border: 2px dashed #0087F7;
+            border-radius: 5px;
+            background: white;
+        }
+        
+        .alert {
+            position: fixed;
+            top: 80px;
+            width: 50%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        
+        .lds-ring {
             display: inline-block;
+            position: relative;
+            width: 64px;
+            height: 64px;
+            top: 50%;
+            left: 50%;
         }
-        .Related_pro {
-            display: inline-block;
-            background-color: green;
-            position: inline-block;
+        
+        .lds-ring div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 51px;
+            height: 51px;
+            margin: 6px;
+            border: 6px solid #fff;
+            border-radius: 50%;
+            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-color: #fff transparent transparent transparent;
         }
-        .btn-ver {
+        
+        .lds-ring div:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+        
+        .lds-ring div:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+        
+        .lds-ring div:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+        
+        @keyframes lds-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        #spinner-wrapper {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1021;
+            display: none;
+        }
+        
+        a.custom-card,
+        a.custom-card:hover {
+            color: inherit;
+            text-decoration: inherit;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        
+        .logBtn {
             background-color: #4CAF50;
             border: none;
             color: white;
@@ -236,8 +156,60 @@
             padding-top: 2px;
             text-align: center;
             text-decoration: none;
-            display: inline;
+            display: inline-block;
             font-size: 14px;
-            >>>>>>>fafda12f4c8ec18cdb1f79fcaa4258982dc12c96
         }
->>>>>>> 47cb1164c268d8ff550803fba484b7ef11bfb8db
+        
+        .logo {
+            width: 20px
+        }
+        /* Dropdown Button */
+        
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        /* Dropdown button on hover & focus */
+        
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #2980B9;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #ddd
+        }
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        
+        .show {
+            display: block;
+        }

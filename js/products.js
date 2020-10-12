@@ -134,8 +134,4 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
         showCategoriesList();
     });
-<<<<<<< HEAD
-
-=======
->>>>>>> 47cb1164c268d8ff550803fba484b7ef11bfb8db
 });
