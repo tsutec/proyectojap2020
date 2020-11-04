@@ -44,38 +44,65 @@
         </div>
     </nav>
     <div class="container p-5">
-        <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-            <h4 class="alert-heading">¡A trabajar! :)</h4>
-            <p>Esta sección corresponde a: Entrega 7 (Fecha de entrega: 8/11/202020) -> Punto 1 y 2.</p>
-            <hr>
-            <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+        <div class="form-group col-md-10">
+            <h1 class="text-center">Datos del perfil</h1>
+            <form>
+                <label for="inputEmail4">Nombres </label>
+                <div class="form-row">
+
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Primer nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Segundo nombre">
+                    </div>
+
+                </div>
+                <label for="inputEmail4">Apellidos</label>
+                <div class="form-row">
+
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Primer apellido">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Segundo apellido">
+                    </div>
+                </div>
+                <label for="inputEmail4">Telefonos</label>
+                <div class="form-row">
+
+                    <div class="col">
+                        <input type="phone" class="form-control" placeholder="Celular">
+                    </div>
+                    <div class="col">
+                        <input type="phone" class="form-control" placeholder="Fijo">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                </div>
+            </form>
+            <div>
+                <button type="submit" class="btn btn-primary my-1">Guardar</button>
+            </div>
         </div>
-    </div>
-    <footer class="text-muted bg-light">
-        <div class="container">
-            <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
-            <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+
+        <div id="spinner-wrapper">
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-    </footer>
-    <div class="alert fade alert-success" role="alert" id="alertResult">
-        <span id="resultSpan"></span>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    </div>
-    <div id="spinner-wrapper">
-        <div class="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/dropzone.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/my-profile.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/dropzone.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/my-profile.js"></script>
 </body>
 
 </html>
