@@ -14,7 +14,7 @@ function hacer2() { /*Obtenido el valor de registro ejecuta la instrucción conv
         a.href = "#";
         a.innerHTML = localStorage.getItem('Usuario');
         a.id = "CorC";
-        document.getElementById("user_name").appendChild(a);
+        //document.getElementById("user_name").appendChild(a);
 
 
 

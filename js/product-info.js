@@ -3,7 +3,11 @@ var Product_arra_rel = []; /*Contiene los indeces de  productos relacionados*/
 var Product_array = []; /*Contiene la info de porductos*/
 var coments = {}; /*Contiene los comentarios del Json sin los nuevos*/
 
+$('.carousel').carousel();
 
+$("#vt").click(function() {
+    alert("jo");
+})
 
 function Hacer_estrellas(score, estrellas) { /*Realiza las estrellas buenas y malas*/
     let estrellas_tot = 5;
@@ -35,16 +39,7 @@ function Hacer_estrellas(score, estrellas) { /*Realiza las estrellas buenas y ma
 
 
 
-function hacer_clic() { /*Redirecciona a products-info.html al presionar el boton ver*/
 
-    document.getElementById("vt").addEventListener("click", function() {
-
-        window.location.reload();
-    });
-
-
-
-}
 
 function Obtener_raltedpro(array) { /*Obtiene los indices de los productos apartir del json de products-info*/
     for (i = 0; i < array.length; i++) {
@@ -53,6 +48,9 @@ function Obtener_raltedpro(array) { /*Obtiene los indices de los productos apart
     }
 
 }
+
+
+
 
 function showImagesGallery(array) { /*Carga las imagenes del JSON para hacer el carousel */
     // images data
@@ -64,8 +62,8 @@ function showImagesGallery(array) { /*Carga las imagenes del JSON para hacer el 
         else status = "";
         htmlContentToAppend += `
         <div class="carousel-item   ` + status + ` ">
-    <img src="` + imageSrc + `"+ class="d-block w-100" alt="">
-  </div>
+        <img src="` + imageSrc + `"+ class="d-block w-100" alt="">
+       </div>
         `
 
         document.getElementById("mostrar_c").innerHTML = htmlContentToAppend; /*contenedor donde se van mostrar las imagenes*/
@@ -99,6 +97,8 @@ document.addEventListener("DOMContentLoaded", function(e) { /*Carga la info de l
             //Muestro las imagenes en forma de galería
             showImagesGallery(category1.images);
             Obtener_raltedpro(category1.relatedProducts);
+
+
         }
     });
 
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function(e) { /*Muestro la descrip
                 <h4>
                     <a href="# " class="font-weight-bold text-dark text-uppercase small ">` + Product_array[Product_arra_rel[i]].name + `</a>
                     <p class="mb-1">` + Product_array[Product_arra_rel[i]].description + `</p>
-                    <button class="btn-ver" id="vt" href="product-info.html"> Ver </button>
+                    <button class="btn-ver    relate" id="vt" href="product-info.html"> Ver </button>
             </div>
 
             `
@@ -135,12 +135,14 @@ document.addEventListener("DOMContentLoaded", function(e) { /*Muestro la descrip
                 document.getElementById("relatedProductsInside").innerHTML = htmlContentToAppend3;
 
 
-
+                $(".relate").click(function() {
+                    window.location.reload();
+                })
             }
 
         }
 
-        hacer_clic(); /*muestra el boton ver y redirecciona a products info*/
+
     });
 });
 
@@ -227,5 +229,7 @@ document.addEventListener("DOMContentLoaded", function(e) { /*Carga los comentar
         }
 
     }
+
     Cargar_start_comentrage();
+
 });
