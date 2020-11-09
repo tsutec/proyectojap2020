@@ -18,37 +18,7 @@
 </head>
 
 <body>
-    <nav class="site-header sticky-top py-1 bg-dark">
-        <!-- Barra de navegacion -->
-        <div class="container d-flex flex-column flex-md-row justify-content-between" id="list1">
-            <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
-            <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
-            <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
-            <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
 
-            <div class="d-flex justify-content-between ">
-                <input type=search id="search" placeholder="Buscar un producto" />
-                <div id="results" class="d-flex justify-content-end"></div>
-            </div>
-            <div class="dropdown">
-                <!-- Crea el menu desplazable  con las opciones My profile,Carrito y Cerrar sesion.-->
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span id="user_name">
-                    </span>
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="my-profile.html">My profile</a>
-                    <a class="dropdown-item" href="cart.html">Carrito</a>
-                    <a class="dropdown-item" id="login-out" href="#">Cerrar Sesion</a>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        </div>
-    </nav>
     <div class="container p-5">
         <!-- contenedor para mostrar la info de los productos-->
         <h3 id="categoryName"></h3>
@@ -107,10 +77,10 @@
 
 
 
-    <div class="container flex-column">
+    <div class="container p-5">
         <!-- Aqui se muestra las imagenes de los productos realacionados-->
         <h2 class="text left">Productos relacionados</h2>
-        <div id="relatedProductsInside" class="row d-flex equal"></div>
+        <div id="relatedProductsInside" class="row d-flex equal "></div>
         <div id="cont"></div>
     </div>
 

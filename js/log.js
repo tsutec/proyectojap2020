@@ -8,7 +8,9 @@ $('.toggle').click(function() { /*Animación del formulario*/
     }, "slow");
 });
 
+const LrReg = localStorage.getItem("Registro"); /*Ver el valor de Registro en el localstorage*/
 
+/*
 
 const LrReg = localStorage.getItem("Registro"); /*Ver el valor de Registro en el localstorage*/
 const var_tok = localStorage.getItem("Tok");

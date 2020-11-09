@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", function(e) { /*Muestro la descrip
 
 
 
-                <div class="col-sm-4  flex-column">
-                <div class="card-img-top flex-column">
+                <div class="col-sm-4 ">
+                <div class="d-block w-100">
                     <img src="` + Product_array[Product_arra_rel[i]].imgSrc + `"class="img-thumbnail"  name="zoom" style="cursor:pointer">
                 </div>
                 <h4>

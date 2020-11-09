@@ -1,4 +1,4 @@
-const val_storage = localStorage.getItem("contador"); /*Obtiene el valor de contador desde LocalStorage*/
+const val_storage = 1; /*Obtiene el valor de contador desde LocalStorage*/
 const val_tok = localStorage.getItem("Registro");
 
 function hacer2() { /*Obtenido el valor de registro ejecuta la instrucción conveniente*/
@@ -32,7 +32,7 @@ function hacer2() { /*Obtenido el valor de registro ejecuta la instrucción conv
     } else {
         window.location.reload();
 
-        window.location.href = "index.html";
+        window.location.href = "homepage.html";
     }
 }
 

@@ -3,6 +3,43 @@ var status = 0;
 
 
 
+function obt_datos() {
+    var priNom = $("#prin-nom").val();
+    var segNom = $("#seg-nom").val();
+    var priApe = $("#pri-ape").val();
+    var segApe = $("#seg-ape").val();
+    var numfi = $("#num-fi").val();
+    var numMo = $("#num-mo").val();
+    var userNi = $("Usuario1").val();
+    var correoUser = $("coe").val();
+    console.log("El  primer nombre ingresado fue " + priNom);
+    console.log("El  segundo nombre ingresado fue " + segNom);
+    console.log("El  primer apellido ingresado fue " + priApe);
+    console.log("El  segundo apellido ingresado fue " + segApe);
+    console.log("Numero fijo ingresado " + numfi);
+    console.log("Numero movil ingresado " + numMo);
+
+    var usuario = {
+        unick: userNi,
+        pNom: priNom,
+        sNom: segNom,
+        pApe: priApe,
+        sApe: segApe,
+        nfi: numfi,
+        nmo: numMo,
+        correo: correoUser
+
+    };
+    usuarios.push(usuario)
+    localStorage.setItem("users_sto", JSON.stringify(usuarios));
+
+    //...
+    var storedNames = JSON.parse(localStorage.getItem("users_sto"));
+
+
+    console.log(storedNames);
+
+}
 
 
 const loginForm = document.getElementById("login-form");

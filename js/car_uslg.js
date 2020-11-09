@@ -1,4 +1,4 @@
-const val_storage = localStorage.getItem("contador");
+const val_storage = 1;
 
 if (val_storage == 1) {
 

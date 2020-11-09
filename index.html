@@ -28,7 +28,7 @@
         </div>
 
 
-        <div class="formulario">
+        <div class="formulario" id="#inicio">
             <h2>Iniciar Sesión
             </h2>
             <form action="#" id="login-form" class="form-signin">
@@ -60,23 +60,30 @@
 
                 <input type="email" name="ce" id="coe" placeholder="Correo Electronico" required focus>
 
-                <input type="text" name="tels" id="tl" placeholder="Teléfono" required>
+                <input type="text" name="tels" id="tl" placeholder="Teléfono Movil" required>
 
-                <input type="submit" name="register-btn" id="sub-log" value="Registrarse">
+                <input type="submit" name="register-btn" id="sub-log" value="Registrarse" href="inicio"></input>
             </form>
         </div>
         <div class="reset-password">
             <a href="#"> Olvide mi Contraseña ?
                                                         </a>
         </div>
-
+        <div id="spinner-wrapper">
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-3.4.1.min.js">
     </script>
 
-    <script src="js/log.js"></script>
     <script src="js/regis.js"></script>
-    </div>
+    <script src="js/init.js"></script>
+
 
 
 
